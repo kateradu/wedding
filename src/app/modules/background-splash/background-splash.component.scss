@@ -1,0 +1,45 @@
+@import "_colors.scss";
+
+.background {
+  background-image: url("../../../assets/images/background.png");
+  background-color: $background;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -2;
+}
+.splash {
+  background-image: url("../../../assets/images/splash.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -2;
+
+  @media (max-width: 480px) {
+    & {
+      background-size: 480px;
+    }
+  }
+}
+.overlay {
+  background-color: rgba($mountain-green, 0.5);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
